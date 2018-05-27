@@ -141,6 +141,6 @@ function get(){
 	document.getElementById('result').innerHTML = "Произведение-палиндром = " 
 		+ numbers.palindrome + " с множителями из простых чисел " 
 		+ numbers.prime1 + " и " + numbers.prime2 + ". <br>" + "Время поиска отображено в консоли";	
-	console.log(arrayOf3_1, arrayOf3_9, arrayOf3_3)
+	
 	return [numbers.palindrome, numbers.prime1, numbers.prime2];
 }
