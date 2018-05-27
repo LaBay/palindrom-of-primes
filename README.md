@@ -1,1 +1,1 @@
-# palindrom-of-primes
+# palindrome-of-primes
