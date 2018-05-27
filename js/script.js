@@ -48,7 +48,7 @@ function get(){
 		palindrome: null
 	}
 
-	console.time('test2'); 
+	console.time('Скорость выполнения'); 
 
 	//ВЫЧИСЛЕНИЕ МАССИВОВ ПРОСТЫХ ПЯТИЗНАЧНЫХ ЧИСЕЛ
 
@@ -102,7 +102,7 @@ function get(){
 
 	//НАХОЖДЕНИЕ ПАЛИНДРОМА 
 
-	function isPalinrome(a, b, compos){//функция для определения палиндрома    
+	function isPalinrome(a, b, compos){//функция для определения палиндромности    
 		
 		compos = a * b;
 
@@ -123,24 +123,24 @@ function get(){
 		for (var i = arr1.length - 1; i >= 0; i--) {
 			for(var k = arr2.length - 1; k >= 0; k--){
 				isPalinrome(arr1[i],arr2[k]);
-				}
 			}
+		}
 	}
 
 	proceed(arrayOf1_1, arrayOf9_9);
 	proceed(arrayOf1_3, arrayOf9_3);
 	proceed(arrayOf1_9, arrayOf9_1);
-	proceed(arrayOf3_1, arrayOf3_9);
+//	proceed(arrayOf3_1, arrayOf3_9);
 	proceed(arrayOf3_3, arrayOf3_3);
 	proceed(arrayOf3_9, arrayOf3_1);
 	proceed(arrayOf9_1, arrayOf1_9);
 	proceed(arrayOf9_3, arrayOf1_3);
 	proceed(arrayOf9_9, arrayOf1_1);
 	
-	console.timeEnd('test2');
+	console.timeEnd('Скорость выполнения');
 	document.getElementById('result').innerHTML = "Произведение-палиндром = " 
 		+ numbers.palindrome + " с множителями из простых чисел " 
 		+ numbers.prime1 + " и " + numbers.prime2 + ". <br>" + "Время поиска отображено в консоли";	
-
+	console.log(arrayOf3_1, arrayOf3_9, arrayOf3_3)
 	return [numbers.palindrome, numbers.prime1, numbers.prime2];
 }
